@@ -43,6 +43,16 @@
   .card .ico { font-size: 1.6rem; }
   .card h2 { font-size: 1.05rem; margin: .6rem 0 .35rem; }
   .card p { color: var(--muted); font-size: .95rem; }
+  .showcase { margin: 2.5rem 0 0; }
+  .showcase img, .gal img { width: 100%; display: block; border-radius: 14px; border: 1px solid var(--line); }
+  .cap { color: var(--muted); font-size: .8rem; margin-top: .45rem; }
+  .gal { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; margin-top: 1.4rem; }
+  @media (max-width: 700px) { .gal { grid-template-columns: 1fr; } }
+  .gal figure, .showcase figure { margin: 0; }
+  .gal .wide { grid-column: 1 / -1; }
+  .sect { margin-top: 3rem; }
+  .sect h2 { font-size: 1.4rem; letter-spacing: -.01em; }
+  .sect .note { color: var(--muted); font-size: .95rem; margin-top: .3rem; }
   .strip { margin-top: 3rem; border-top: 1px solid var(--line); padding-top: 2rem;
     display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
   @media (max-width: 700px) { .strip { grid-template-columns: 1fr; } }
@@ -63,6 +73,23 @@
     <p class="sub">Sports-science and robotics kits from Science on the Court — sensors, motors, and 3D-printed parts that turn jump height, heart rate, and shot speed into hands-on STEM lessons. Every student builds their own kit and takes it home.</p>
     <a class="cta" href="mailto:info@scienceonthecourt.com?subject=STEM%20Kits%20early%20access&body=Hi%20SOTC%20team%2C%20I%27d%20like%20early%20access%20to%20the%20STEM%20kits.%20Organization%3A%20___%20%C2%B7%20Number%20of%20students%3A%20___">Get early access</a>
     <p class="cta-note">Live demos arrive October 2026 — early-access members see them first. Tell us your organization and how many students you serve.</p>
+  </section>
+
+  <figure class="showcase">
+    <img src="img/hero.webp" alt="Concept render of the SOTC kit: an orange 3D-printed device with LED matrix display, sensors, and battery, standing on a basketball court" width="1600" height="893">
+    <figcaption class="cap">Concept render — kit design in development. Working demos arrive October 2026.</figcaption>
+  </figure>
+
+  <section class="sect">
+    <h2>A first look</h2>
+    <p class="note">Concept renders of the kit family we're prototyping now.</p>
+    <div class="gal">
+      <figure><img src="img/flatlay.webp" alt="Concept render: hands assembling kit components — controller board, sensors, wiring, battery — on a work mat" loading="lazy"><figcaption class="cap">Every student builds their own — the build is the first lesson. <em>Concept render.</em></figcaption></figure>
+      <figure><img src="img/wrist.webp" alt="Concept render: wrist-worn sensor pod with LED display worn while dribbling a basketball" loading="lazy"><figcaption class="cap">Wearable telemetry: airtime, jump count, heart rate — live on court. <em>Concept render.</em></figcaption></figure>
+      <figure><img src="img/kitchen.webp" alt="Concept render: a student assembling her kit at the kitchen table" loading="lazy"><figcaption class="cap">Take it home — learn all week, bring it in on Saturday. <em>Concept render.</em></figcaption></figure>
+      <figure><img src="img/classroom.webp" alt="Concept render: an instructor and students building a robot car together" loading="lazy"><figcaption class="cap">Robot-car builds with coaching — volunteers we train, or instructors we bring. <em>Concept render.</em></figcaption></figure>
+      <figure class="wide"><img src="img/jumpmat.webp" alt="Concept render: a student mid-jump above a measurement mat, kit displaying the reading courtside" loading="lazy"><figcaption class="cap">The court is the laboratory: jump height, sprint speed, shot arc — measured by the kit you built. <em>Concept render.</em></figcaption></figure>
+    </div>
   </section>
 
   <div class="grid">
